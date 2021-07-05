@@ -1,17 +1,17 @@
-l = [64, 25, 12, 22, 11, 1, 2, 44, 3, 122, 23, 34]
+numbers = [3, 2, 18, 0, 7, 6]
 
-for i in range(len(l)):
-    for j in range(i + 1, len(l)):
+for i in range(len(numbers)):
+    for j in range(i + 1, len(numbers)):
 
-        if l[i] > l[j]:
-           l[i], l[j] = l[j], l[i]
+        if numbers[i] > numbers[j]:
+            numbers[i], numbers[j] = numbers[j], numbers[i]
 evenList = []
 oddList = []
-for i in range(len(l)):
-    if l[i] % 2 == 0:
-        evenList.append(l[i])
-    if l[i] % 2 == 1:
-        oddList.append(l[i])
+for i in range(len(numbers)):
+    if numbers[i] % 2 == 0:
+        evenList.append(numbers[i])
+    if numbers[i] % 2 == 1:
+        oddList.append(numbers[i])
 
 for i in oddList:
     evenList.append(i)
