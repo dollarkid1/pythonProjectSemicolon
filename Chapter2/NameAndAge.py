@@ -3,6 +3,6 @@ user=[]
 for i in range (3):
     name=input('enter name')
     age=int(input('enter age'))
-    user.append([name,age])
+    pair = (name, age)
+    user.append(pair)
 print(user)
-print('d'+2)
