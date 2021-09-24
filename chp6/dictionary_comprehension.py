@@ -8,5 +8,6 @@ grades = {'Sue': [98, 87, 94], 'Bob': [84, 95, 91]}
 grades2 = {z: sum(x) / len(x) for z, x in grades.items()}
 print(grades2)
 
-a = {number: number ** 3 for number in range(1,6)}
+a = {number: number ** 3 for number in range(1, 6)}
 print(a, end=' ')
+
